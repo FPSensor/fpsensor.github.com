@@ -354,6 +354,95 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-my-first-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      initialize my first repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      who are ?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doing-our-first-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Doing our first change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pushing-to-our-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      pushing to our repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-chaper-is-done-some-things-to-clarify" class="md-nav__link">
+    <span class="md-ellipsis">
+      first chaper is done, some things to clarify
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-a-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      clone a repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-did-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      who did this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-want-a-cherry" class="md-nav__link">
+    <span class="md-ellipsis">
+      i want a cherry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-be-continued" class="md-nav__link">
+    <span class="md-ellipsis">
+      to be continued
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,37 +464,37 @@
 its basic so dont pretend that u will be expert after this.  <br />
 u should have a git account of a git site ofc.  <br />
 u should had installed git already    </p>
-<h1 id="initialize-my-first-repo">initialize my first repo</h1>
+<h2 id="initialize-my-first-repo">initialize my first repo</h2>
 <p>new repo</p>
 <pre><code>mkdir repo
 cd repo
 git init
 </code></pre>
-<h1 id="who-are">who are ?</h1>
+<h2 id="who-are">who are ?</h2>
 <p>with the information u provided to create a account u have to fil this</p>
 <pre><code>git config --global user.name
 git config --global user.email
 </code></pre>
-<h1 id="doing-our-first-change">Doing our first change</h1>
+<h2 id="doing-our-first-change">Doing our first change</h2>
 <pre><code>git branch -M master
 touch hi
 echo 1 &gt; hi
 git add hi
 git commit -m &quot;first hi public release&quot;
 </code></pre>
-<h1 id="pushing-to-our-repo">pushing to our repo</h1>
+<h2 id="pushing-to-our-repo">pushing to our repo</h2>
 <p>in our github we should make a repository with the name we want to add to it  <br />
 i want to clarify that i use github cuz its the more ommon but its the same for all    </p>
 <pre><code>git remote add origin https://github.com/FPSensor/hi
 git push -f -u origin HEAD:master
 </code></pre>
-<h1 id="first-chaper-is-done-some-things-to-clarify">first chaper is done, some things to clarify</h1>
+<h2 id="first-chaper-is-done-some-things-to-clarify">first chaper is done, some things to clarify</h2>
 <p>1: we want u to be explicit with the commits, whats modified, with file, which section of the repo, anything, even in the description u should said why u did what   <br />
 2: no need to put -m on the git commit command, if u dont add -m it will open the editor, this is better for long commit messages.  <br />
 3: that larger push command is only for new branches, should be another way but if u clone the repo again a "git push" is enough    </p>
-<h1 id="clone-a-repo">clone a repo</h1>
+<h2 id="clone-a-repo">clone a repo</h2>
 <p>as simple as "git clone link -b branch"</p>
-<h1 id="who-did-this">who did this?</h1>
+<h2 id="who-did-this">who did this?</h2>
 <p>i took a commit from another guy, how to recognize his work?  <br />
 in android comunity we dont want people that doesnt add authors to commits and u will be like trash for they (i say by previous experiences) so, 
 we should add who did that.
@@ -417,7 +506,7 @@ i took a commit from a repo where i was looking, how we can get that?
 in the commit link add .patch 
 this will literally make the commit a patch file, something that we will talk later about, but the point is:
 we can use it to get the author, check it.</p>
-<h1 id="i-want-a-cherry">i want a cherry</h1>
+<h2 id="i-want-a-cherry">i want a cherry</h2>
 <p>a cherry pick is literally wn you pick commits from another repo
 to do it is really simple
 we have to initialize the repository and its changes with their commit hashes:</p>
@@ -444,7 +533,7 @@ its really simple</p>
 <pre><code>git cherry-pick --ship
 </code></pre>
 <p>this also applies for commits that was already dont and are uplicated</p>
-<h1 id="to-be-continued">to be continued</h1>
+<h2 id="to-be-continued">to be continued</h2>
 
 
 
