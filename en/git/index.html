@@ -436,23 +436,10 @@ we got a conflict of context at hi file</p>
 <p>how we look into it?
 a git conflict its where git dont know what to do cuz your source and the source of the repo before that commit are different
 its really simple</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-======= that source with the commit applied (should appear as a hash of commit)</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>end of the confflict</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+======= that source with the commit applied (should appear as a hash of commit)
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; end of the confflict
+</code></pre>
 <p>we dont want to apply a commit cuz tons of confflicts and urlazy?</p>
 <pre><code>git cherry-pick --ship
 </code></pre>
