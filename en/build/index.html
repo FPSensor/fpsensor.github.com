@@ -460,48 +460,50 @@
 
 
 <h1 id="the-android-build-guide">The android build guide</h1>
-<p>on this guide i will explain u how to find device trees, prepare the env, requeriments, and more</p>
+<p>on this guide i will explain u how to find device trees, prepare the env, requeriments, and more    </p>
 <h2 id="reqs">Reqs</h2>
 <ul>
-<li>64bit decent cpu</li>
-<li>32GB of RAM</li>
-<li>500GB+ space (SSD recommended)</li>
-<li>a good internet (or much patience)</li>
-<li>a brain</li>
-<li>a bit of knowledge of linux terminal</li>
+<li>64bit decent cpu    </li>
+<li>32GB of RAM    </li>
+<li>500GB+ space (SSD recommended)    </li>
+<li>a good internet (or much patienceand a very stable internet)    </li>
+<li>common sense    </li>
+<li>a bit of knowledge of linux terminal    </li>
 </ul>
+<p>can u use lowest specifications? ye, these ae the most recommended but u can try others. u can by example to use a lot of swap or waiting 3 days to the rom to be compiled but with these specifications u can be sure that u wont have problems  <br />
+anothehr recomendation is that if u are going to make a PC to buildalways search AMD, the compilation is a work that uses the whole CPU at the same time and on long periods and for that a good AMD multicore is the best    </p>
 <h2 id="recomendations">recomendations</h2>
 <ul>
-<li>do just Lineage <ul>
-<li>for the first try i recommend u that u try a simple rom, dont try aospa, aosp, etc. do a rom that all of us know that works well</li>
+<li>do just Lineage     <ul>
+<li>for the first try i recommend u that u try a simple rom, dont try aospa, aosp, etc. do a rom that all of us know that works well    </li>
 </ul>
 </li>
-<li>learn git (a guide is coming soon)<ul>
-<li>its not necesary to make the rom but u will need it wen u want to do changes and u dont want to push commits without author and "update x.x" if u dont want the community hates u</li>
+<li><a href="../git/">learn git</a>    <ul>
+<li>its not necesary to make the rom but u will need it wen u want to do changes and u dont want to push commits without author and "update x.x" if u dont want the community hates u    </li>
 </ul>
 </li>
-<li>dont ask for mainteinership<ul>
-<li>u did your rom? congrats, but u still have to learn a lot to be a maintainer of a rom, maintainer is a person that can update the rom constantly and can fix reported bugs reading logs and making changes in trees</li>
+<li>dont ask for mainteinership    <ul>
+<li>u did your rom? congrats, but u still have to learn a lot to be a maintainer of a rom, a maintainer is a person that can update the rom constantly and can fix reported bugs reading logs and making changes in trees. u dont want that the creators of the rom to put u in a blacklist    </li>
 </ul>
 </li>
 </ul>
 <h2 id="getting-server">getting server</h2>
-<p>if u dont have the specs mentioned before u will need a server
-for that we have some options </p>
+<p>if u dont have the specs mentioned before u will need a server  <br />
+for that we have some options     </p>
 <ul>
-<li>buy a server<ul>
-<li>since no one of server sellers  promote me i wont send u anyone but its really easy to find a server seller in tellegram, they usually manages on paypal</li>
+<li>buy a server    <ul>
+<li>since no one of server sellers  promote me i wont send u anyone but its really easy to find a server seller in telegram, they usually manages on paypal    </li>
 </ul>
 </li>
-<li><a href="https://cloud.google.com">Google Cloud Platform Free triel</a><ul>
-<li>make a new google account since wen u have 0 credits u have to delete it</li>
-<li>u need a credit card (dw, no costs at all)</li>
+<li><a href="https://cloud.google.com">Google Cloud Platform Free triel</a>    <ul>
+<li>make a new google account since wen u have 0 credits u have to delete it    </li>
+<li>u need a credit card (dw, no costs at all)    </li>
 </ul>
 </li>
 </ul>
 <h2 id="getting-device-trees">getting device trees</h2>
-<p>doesnt makes sense that we sync a rom if there is not device trees for my device so the next step is to look for a device tree
-how we plan to do that?</p>
+<p>doesnt makes sense that we sync a rom if there is not device trees for my device so the next step is to look for a device tree  <br />
+how we plan to do that?    </p>
 <p>first try, XDA   <br />
 i have a Xiaomi Redmi Note 7 [lavender]  <br />
 now we will ook for the xda  <br />
@@ -513,23 +515,23 @@ then we will search for kernel source (it will be always since its GPLv2 req)   
 <p>xda has no luck?  <br />
 lets try another  <br />
 go to github.com   <br />
-go to search button and search kernel_brand_device(or _soc ex sm8250)     </p>
-<p>if u found your device trees then lets come with the next step  <br />
-if u have no luck then probably can <a href="https://t.me/FPSensor">contact me</a> to see if we have luck, else the guide ends here for u    </p>
-<p>wen we have his kernel we will go to his github profile and look for these:</p>
+go to search button and search kernel_brand_device(or _soc ex ssm660)     </p>
+<p>if u found your kernel tree then lets come with the next step  <br />
+if u have no luck then can <a href="https://t.me/FPSensor">contact me</a> to see if we have luck, else the guide ends here for u    </p>
+<p>wen we have his kernel we will go to his github profile and look for these:    </p>
 <ul>
-<li>device_brand_name</li>
-<li>vendor_brand_name</li>
-<li>kernel_brand_name (it can be kernel_brand_soc ex: sm8250)</li>
-<li>device_brand_soc-common (if exist)</li>
-<li>vendor_brand_soc-common (if exist)<ul>
-<li>for vendor repos if u found device and kernel from lineage org then there will be on TheMuppets org probably</li>
+<li>device_brand_name    </li>
+<li>vendor_brand_name    </li>
+<li>kernel_brand_name (it can be kernel_brand_soc ex: sdm660) (that we already have)    </li>
+<li>device_brand_soc-common (if exist)    </li>
+<li>vendor_brand_soc-common (if exist)    <ul>
+<li>for vendor repos if u found device and kernel from lineage org then there will be on TheMuppets org probably    </li>
 </ul>
 </li>
-<li>hardware_brand (if exist, else we will take it from LineageOS organization)</li>
+<li>hardware_brand (if exist, else we will take it from LineageOS organization)    </li>
 </ul>
-<p>in some cases it will have android_, its the same, dont worry</p>
-<p>if we can find a local_manifests repo very good cuz we can use it, save it cuz will be important</p>
+<p>in some cases it will have android_ or proprietary_, its the same, dont worry    </p>
+<p>if we can find a local_manifests repo very good cuz we can use it, save it cuz will be important    </p>
 <h2 id="preparing-the-env">preparing the env</h2>
 <p>i recommend u to use Ubuntu (i use 20.04 but others should work too)</p>
 <pre><code>sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python
@@ -547,19 +549,19 @@ git config --global user.email
 <pre><code>mkdir LineageOS
 cd LineageOS
 </code></pre>
-<p>we will start the rom sync</p>
-<p>BUT WAIT WAIT WAIT
-you got a local_manifests repo?
-do this</p>
+<p>we will start the rom sync    </p>
+<p>BUT WAIT WAIT WAIT  <br />
+you got a local_manifests repo?  <br />
+do this    </p>
 <pre><code>git clone LINK .repo/local_manifests
 </code></pre>
-<p>now lets sync the rom
-be ready for a long time of downloading, have a good internet in that moment</p>
+<p>now lets sync the rom  <br />
+be ready for a long time of downloading, have a good internet in that moment    </p>
 <pre><code>repo init -u https://github.com/LineageOS/android.git -b lineage-XX (replace XX with lineage version, should be same as tree adroid version)
 repo sync -c --no-clone-bundle -j12 --force-sync
 </code></pre>
 <p>u should get a message like "Repo sync succesfully"    </p>
-<p>ok so if we had local_manifest all things we need are cloned   <br />
+<p>ok so if we had local_manifests all things we need are cloned   <br />
 else we will take a look on the repos we got  <br />
 i will do a command for example and then u guys will reply    </p>
 <p>git clone https://github.com/android_device_motorola_rhode device/motorola/rhode -b [the branch should be the same as lineage or android version]  <br />
@@ -569,9 +571,11 @@ git clone https://github.com/1/android_device_xiaomi_lavender device/xiaomi/lave
 in the clkone path we do this  <br />
 device/xiaomi/lavender  <br />
 so we ignore the android_ or the proprietary_ and we replace these _ with /  <br />
-done, we have all clonned    </p>
+done, we have all clonned  <br />
+we will do this with all the repos we found in the search of dts    </p>
 <h2 id="prepare-device-trees-for-the-rom">prepare device trees for the rom</h2>
 <p>we will move to device/brand/devicename  <br />
+if we see that xx_devicename.mk is linege_devicename.mk we will skip these next steps
 now we will look for AndroidProducts.mk  <br />
 we will replace all xx_devicename with lineage_devicename   <br />
 save and now we will search for xx_devicename.mk and rename as lineage_devicename.mk  <br />
@@ -581,7 +585,7 @@ now in BoardConfig.mk or if we have a -common tree will move to the -common/Boar
 on it we will look if there is any vendor/xx definition and will replace with vendor/lineage  <br />
 done, we will move back to main folder    </p>
 <h2 id="time-to-build">time to build</h2>
-<p>we will do this</p>
+<p>we will do this on the main build directory</p>
 <pre><code>. build/envsetup.sh
 lunch lineage_devicename-userdebug
 m bacon
@@ -590,7 +594,7 @@ m bacon
 now test and good luck    </p>
 <h2 id="ask-me-a-question">Ask me a question</h2>
 <p>want me to modify the guide? need help with the guide? contact me in my <a href="https://t.me/FPSensorSupport">support group</a>    </p>
-<p>this guide was done with my hands, with my knowledge and never searched in another site for a reference wen writing (besides these env commands that i took from crDroid) so it may can have issues, make suggestions in my group</p>
+<p>this guide was done with my hands, with my knowledge and never searched in another site for a reference wen writing (besides these env commands that i took from crDroid) so it may can have redaction issues, make suggestions in my group</p>
 <p>thank you</p>
 
 
